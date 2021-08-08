@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trimanos: The Client-Side Video Trimmer</title>
+    </head>
+    <body>
+        <input type="file" id="uploader" accept="video/mp4" />
+        <input type="number" id="portion" name="part" min="1" />
+        <input
+            type="number"
+            id="size"
+            name="size"
+            min="1"
+            placeholder="Please enter the amount in bytes"
+        />
+        <button id="process">Process</button>
+        <video controls id="player" hidden></video>
+        <p id="message"></p>
+        <script src="/bundle.js"></script>
+    </body>
+</html>
